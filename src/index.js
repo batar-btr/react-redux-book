@@ -12,6 +12,13 @@ import colorReducer from './store/reducers/colors'
 import usersReducer from './store/reducers/users'
 import numberReducer from './store/reducers/number'
 
+import fontawesome from '@fortawesome/fontawesome'
+import faCheckSquare from '@fortawesome/fontawesome-free-solid/faCheckSquare'
+import faCoffee from '@fortawesome/fontawesome-free-solid/faCoffee'
+import faTimes from '@fortawesome/fontawesome-free-solid/faTimes'
+
+fontawesome.library.add(faCheckSquare, faCoffee, faTimes)
+
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const rootReducer = combineReducers({
